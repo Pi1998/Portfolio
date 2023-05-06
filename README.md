@@ -19,6 +19,7 @@
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [❓ FAQ (OPTIONAL) ](#-faq-optional-)
+  - [📝 License ](#-license-)
   
 <!-- PROJECT DESCRIPTION -->
 
@@ -167,3 +168,10 @@ I would like to thank to the Microverse community along with friends and family 
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+    
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
