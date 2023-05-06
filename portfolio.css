@@ -94,14 +94,14 @@ nav img {
   margin-bottom: 10%;
 }
 
-article {
+.heading1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-article .heading {
+.heading1 .heading {
   color: #172b4d;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -198,8 +198,19 @@ article .heading {
   margin-bottom: 10%;
 }
 
+.btn:hover {
+  background: #36b37f;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.btn:active {
+  background: #008552;
+}
+
 .abt-me {
   background-image: url(Icon/illustration-\ about\ me-\ mobile.svg);
+  background-size: 93%;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -240,14 +251,24 @@ article .heading {
   font-size: 17px;
   line-height: 24px;
   color: #fff;
-  width: 40%;
+  width: 45%;
   letter-spacing: 0.03em;
   background: #36b37f;
   border-radius: 4px;
+  border-color: #fff;
   margin: 0;
   padding: 3.5%;
   text-align: center;
   margin-bottom: 10%;
+}
+
+.btn-project:hover {
+  background: #36b37f;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.btn-project:active {
+  background: #008552;
 }
 
 .resume-container {
@@ -256,6 +277,7 @@ article .heading {
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: 1fr;
   row-gap: 0.5%;
+  padding-left: 6%;
 }
 
 .resume-items {
@@ -264,11 +286,10 @@ article .heading {
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  width: 88%;
+  width: 94%;
   height: 316px;
   background: #ebf0ee;
   border: 1px solid #d0d9d4;
-  margin-left: 6%;
   margin-bottom: 4%;
   margin-top: 2%;
 }
@@ -286,7 +307,7 @@ article .heading {
   text-align: center;
   color: #344563;
   margin-top: 0;
-  margin-bottom: 1%;
+  margin-bottom: 8%;
 }
 
 .item-content {
