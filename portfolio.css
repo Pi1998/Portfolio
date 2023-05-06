@@ -13,7 +13,7 @@ nav img {
   padding-top: 20px;
 }
 
-section {
+.first-intro {
   background-image: url(Icon/header-illsutration-mobile@2x.png);
   background-size: 93%;
   background-position: bottom -4px right;
@@ -163,6 +163,7 @@ article .heading {
   flex-direction: row;
   list-style-type: none;
   justify-content: space-between;
+  margin-bottom: 10%;
 }
 
 .tag li {
@@ -185,15 +186,15 @@ article .heading {
   font-size: 17px;
   line-height: 24px;
   color: #fff;
-  width: 33%;
+  width: 40%;
   letter-spacing: 0.03em;
   background: #36b37f;
   border-radius: 4px;
+  border-color: #fff;
   margin: 0;
   padding: 3.5%;
   text-align: center;
   margin-left: 29%;
-  margin-top: 10%;
   margin-bottom: 10%;
 }
 
@@ -204,6 +205,7 @@ article .heading {
   justify-content: center;
   align-items: center;
   margin-top: 20%;
+  margin-bottom: 8%;
 }
 
 .head-abt-me {
@@ -267,11 +269,12 @@ article .heading {
   background: #ebf0ee;
   border: 1px solid #d0d9d4;
   margin-left: 6%;
-  margin-bottom: 2%;
+  margin-bottom: 4%;
+  margin-top: 2%;
 }
 
 .resume-items img {
-  margin-top: 5%;
+  margin: 0;
 }
 
 .item-head {
@@ -299,7 +302,7 @@ article .heading {
 }
 
 .item-content li {
-  padding: 4% 3%;
+  padding: 3% 2.5%;
   background: #fff;
   border-radius: 8px;
   font-family: 'Inter', sans-serif;
