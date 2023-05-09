@@ -4,7 +4,6 @@
   --white-color: #fff;
   --button-hover-color: #7ebfa3;
   --content-text-color: #42526e;
-  --button-hover-color: #6ac49f;
   --button-active-color: #008552;
 }
 
@@ -470,7 +469,7 @@ textarea {
 
 .form-btn:hover {
   background-color: var(--button-hover-color);
-  color: black;
+  color: var(--white-color);
 }
 
 .contact-form .form-btn {
@@ -516,23 +515,6 @@ textarea {
   color: var(--content-text-color);
 }
 
-.form-btn {
-  background-color: var(--green-color);
-  color: var(--white-color);
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-}
-
-.form-btn:hover {
-  background-color: var(--button-hover-color);
-    color: var(--white-color);
-}
 /* button hover effects */
 .form-btn:active {
   background-color: var(--button-active-color);
