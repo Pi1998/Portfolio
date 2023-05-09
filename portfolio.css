@@ -1,8 +1,10 @@
 :root {
---form-border-color: #d0d9d4;
---green-color: #36b37e;
---white-color: #ffffff;
+  --form-border-color: #d0d9d4;
+  --green-color: #36b37e;
+  --white-color: #ffffff;
+  --button-hover-color: #7ebfa3;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -455,7 +457,7 @@ textarea {
   background-image: url(./images/form-bg.svg);
   background-size: 20%;
   background-repeat: no-repeat;
-  background-position: right 0; 
+  background-position: right 0;
   height: 300px;
   width: 100%;
   border-radius: 10px;
@@ -485,7 +487,40 @@ textarea {
 
 .form-btn:hover {
   background-color: var(--button-hover-color);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  color: black;
 }
 
 /* contact section- END */
+
+@media only screen and (min-width: 375px) {
+  .contact-form .contact-btn {
+    width: 50%;
+  }
+
+  .contact-form {
+    padding: 10px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #contact-section {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-form {
+    max-width: 800px;
+  }
+
+  .contact-image {
+    height: 100%;
+    width: 40%;
+  }
+}
