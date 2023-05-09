@@ -1,5 +1,7 @@
 :root {
 --form-border-color: #d0d9d4;
+--green-color: #36b37e;
+--white-color: #ffffff;
 }
 body {
   margin: 0;
@@ -358,10 +360,6 @@ nav img {
   margin-top: auto;
 }
 
-.article-container {
-  margin-bottom: 30px;
-}
-
 /* FORM COMPONENT */
 .email-container {
   display: flex;
@@ -433,7 +431,7 @@ textarea {
   border-color: var(--green-color);
 }
 
-.contact-form .contact-btn {
+.contact-form .form-btn {
   box-sizing: border-box;
   position: relative;
   margin-top: 20px;
@@ -453,10 +451,6 @@ textarea {
   text-align: center;
 }
 
-.contact-form .contact-btn:hover {
-  background-color: var(--green-color);
-}
-
 .contact-image {
   background-image: url(./images/form-bg.svg);
   background-size: 20%;
@@ -474,6 +468,24 @@ textarea {
   text-align: center;
   margin-bottom: 20px;
   color: var(--content-text-color);
+}
+
+.form-btn {
+  background-color: var(--green-color);
+  color: var(--white-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.form-btn:hover {
+  background-color: var(--button-hover-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* contact section- END */
