@@ -380,6 +380,9 @@ nav img {
   width: 100%;
   max-width: 500px;
   padding: 20px;
+  max-width: 80%;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .form-container {
