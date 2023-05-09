@@ -1,7 +1,7 @@
 :root {
   --form-border-color: #d0d9d4;
   --green-color: #36b37e;
-  --white-color: #ffffff;
+  --white-color: #fff;
   --button-hover-color: #7ebfa3;
   --content-text-color: #42526e;
 }
@@ -378,11 +378,9 @@ nav img {
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 500px;
   padding: 20px;
   max-width: 80%;
-    width: 100%;
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .form-container {
@@ -415,15 +413,33 @@ textarea {
   height: 200px;
 }
 
-.form-group input,
+.form-group input {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  border: 1px solid var(--form-border-color);
+  border-radius: 4px;
+  background: var(main-background-color);
+  color: #3c3c3c;
+  transition: border-color 0.3s ease-in-out;
+}
+
 .form-group textarea {
   box-sizing: border-box;
   position: relative;
   width: 100%;
   padding: 12px;
-  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
   font-weight: 400;
-  line-height: 24px;
+  font-size: 15px;
+  line-height: 160%;
   border: 1px solid var(--form-border-color);
   border-radius: 4px;
   background: var(main-background-color);
@@ -435,6 +451,24 @@ textarea {
 .form-group textarea:focus {
   outline: none;
   border-color: var(--green-color);
+}
+
+.form-btn {
+  background-color: var(--green-color);
+  color: var(--white-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.form-btn:hover {
+  background-color: var(--button-hover-color);
+  color: black;
 }
 
 .contact-form .form-btn {
@@ -474,24 +508,6 @@ textarea {
   text-align: center;
   margin-bottom: 20px;
   color: var(--content-text-color);
-}
-
-.form-btn {
-  background-color: var(--green-color);
-  color: var(--white-color);
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-}
-
-.form-btn:hover {
-  background-color: var(--button-hover-color);
-  color: black;
 }
 
 /* contact section- END */
