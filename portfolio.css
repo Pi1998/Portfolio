@@ -1,3 +1,12 @@
+:root {
+  --form-border-color: #d0d9d4;
+  --green-color: #36b37e;
+  --white-color: #fff;
+  --button-hover-color: #7ebfa3;
+  --content-text-color: #42526e;
+  --button-active-color: #008552;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -344,4 +353,207 @@ nav img {
   text-align: center;
   color: #172b4d;
   padding: 0 5%;
+}
+
+/* contact section */
+#contact-section {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+}
+
+/* FORM COMPONENT */
+.email-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  justify-content: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.form-container {
+  align-items: center;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-group label {
+  display: none;
+}
+
+textarea {
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: var(--white-color);
+  border: 1px solid #60c095;
+  border-radius: 4px;
+  resize: none;
+  height: 200px;
+}
+
+.form-group input {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  border: 1px solid var(--form-border-color);
+  border-radius: 4px;
+  background: var(main-background-color);
+  color: #3c3c3c;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.form-group textarea {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  border: 1px solid var(--form-border-color);
+  border-radius: 4px;
+  background: var(main-background-color);
+  color: #3c3c3c;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--green-color);
+}
+
+.form-btn {
+  background-color: var(--green-color);
+  color: var(--white-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.form-btn:hover {
+  background-color: var(--button-hover-color);
+  color: var(--white-color);
+}
+
+.contact-form .form-btn {
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  width: 50%;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  border-radius: 4px;
+  background: var(--green-color);
+  color: var(--white-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  text-align: center;
+}
+
+.contact-image {
+  background-image: url(./images/form-bg.svg);
+  background-size: 20%;
+  background-repeat: no-repeat;
+  background-position: right 0;
+  height: 300px;
+  width: 100%;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-top: -220px;
+}
+
+.email-text {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--content-text-color);
+}
+
+/* button hover effects */
+.form-btn:active {
+  background-color: var(--button-active-color);
+  color: var(--white-color);
+}
+
+/* button hover effects END */
+
+/* contact section- END */
+
+@media only screen and (min-width: 375px) {
+  .contact-form .contact-btn {
+    width: 50%;
+  }
+
+  .contact-form {
+    padding: 10px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #contact-section {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-form {
+    max-width: 400px;
+  }
+
+  .contact-image {
+    height: 50%;
+    width: 30%;
+  }
 }
