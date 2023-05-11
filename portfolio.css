@@ -143,7 +143,7 @@ nav img {
   display: flex;
   align-items: flex-end;
   border-radius: 8px;
-  width: 327px;
+  max-width: 327px;
   height: 474px;
   background-color: #ebf0ee;
   border: 1px solid #d0d9d4;
@@ -295,7 +295,7 @@ nav img {
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  width: 94%;
+  width: 327px;
   height: 316px;
   background: #ebf0ee;
   border: 1px solid #d0d9d4;
@@ -652,8 +652,6 @@ textarea {
   }
 
   .btn-project {
-    width: 153px;
-    padding: 12px;
     border: none;
     margin-bottom: 2%;
   }
@@ -661,6 +659,7 @@ textarea {
   /* Resume list */
 
   .resume-container {
+    justify-content: space-between;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     padding: 0 10%;
@@ -669,6 +668,8 @@ textarea {
   }
 
   .resume-items {
+    width: 97%;
+    height: 316px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
