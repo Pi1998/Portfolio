@@ -143,7 +143,7 @@ nav img {
   display: flex;
   align-items: flex-end;
   border-radius: 8px;
-  width: 87.2%;
+  width: 327px;
   height: 474px;
   background-color: #ebf0ee;
   border: 1px solid #d0d9d4;
@@ -159,7 +159,7 @@ nav img {
 .project-title {
   text-align: center;
   margin: 3%;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -344,6 +344,24 @@ nav img {
   color: #36b37e;
 }
 
+
+/* contact section */
+.contact-section {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+}
+
+.icon-section {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+}
+
 .end-text {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -353,15 +371,6 @@ nav img {
   text-align: center;
   color: #172b4d;
   padding: 0 5%;
-}
-
-/* contact section */
-#contact-section {
-  padding: 2%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: auto;
 }
 
 /* FORM COMPONENT */
@@ -525,6 +534,8 @@ textarea {
 
 /* contact section- END */
 
+/* Media Queries for Mobile Version */
+
 @media only screen and (min-width: 375px) {
   .contact-form .contact-btn {
     width: 50%;
@@ -541,19 +552,173 @@ textarea {
   }
 }
 
+
+/* Media Queries for Desktop Version */
+
 @media only screen and (min-width: 768px) {
-  #contact-section {
-    justify-content: center;
-    align-items: center;
+  nav {
+    display: none;
+  }
+
+  /* First intro section start */
+
+  .first-intro {
+    background-image: url(Icon/Header-llustration-desktop@2x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 100%;
+  }
+
+  .intro h1 .intro-mobile {
+    display: none;
+  }
+
+  .intro h1 {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 125%;
     text-align: center;
+    letter-spacing: 0.37px;
+  }
+
+  .intro .intro2 {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 125%;
+    text-align: center;
+    letter-spacing: 0.37px;
+  } 
+
+  .text {
+    line-height: 32px;
+    padding: 0 20%;
+  }
+
+  .icon{
+    padding-top: 1%;
+  }
+
+  .down-arrow {
+    margin-top: 2%;
+    margin-bottom: 0;
+    padding-bottom: 30%;
+  }
+
+  /* First intro section End */
+
+  /* Recent Work Section Start */
+
+  .indicator img {
+    display: none;
+  }
+
+  .main-container {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0 14%;
+    row-gap: 3%;
+    column-gap: 2%;
+  }
+
+  .card {
+    margin: 0;
+    width: 100%;
+  }
+
+  /* Recent Work Section End */
+
+  /* About Me Section Start */
+
+  /* About Me */
+
+  .abt-me {
+    background-image: url(Icon/illustration\ about\ me\ desktop.png);
+    background-size: 98.5%;
+    margin-top: 8%;
+    margin-bottom: 1%;
+    padding-top: 7.5%;
+  }
+
+  .head-abt-me {
+    margin-bottom: 1%;
+  }
+
+  .txt-abt-me {
+    margin-top: 1%;
+    padding: 0 24%;
+  }
+
+  .btn-project {
+    width: 12%;
+    padding: 1% 1%;
+    border: none;
+    margin-bottom: 2%;
+  }
+
+  /* Resume list */
+
+  .resume-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    padding: 0 10%;
+    column-gap: 1%;
+    margin-bottom: 3%;
+  }
+
+  .resume-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  /* About Me Section End */
+
+  /* Contact Section Start */
+  .contact-section {
+    /* display: grid;
+    align-items: center;
+    grid-template-rows: 2;
+    grid-template-columns: 40% 60%; */
+    flex-direction: row;
+    padding: 0 15%;
+  }
+
+  .end-text {
+    font-size: 30px;
+    line-height: 173%;
+    padding: 0;
+    width: 60%;
   }
 
   .contact-form {
-    max-width: 400px;
+    max-width: 800px;
+    width: 100%;
+  }
+
+  .form-group .form-btn {
+    margin: 0;
+    align-items: flex-start;
+  }
+
+  .email-container {
+    display: none;
+  }
+
+  .icon {
+    /* grid-row: 2;
+    grid-column: 1 / span 2; */
+    width: 100%;
   }
 
   .contact-image {
-    height: 50%;
-    width: 30%;
+    display: none;
+    /* height: 50%;
+    width: 30%; */
   }
+
+  /* Contact section end */
 }
+
