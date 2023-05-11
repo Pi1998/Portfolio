@@ -195,13 +195,13 @@ nav img {
   font-size: 17px;
   line-height: 24px;
   color: #fff;
-  width: 40%;
+  width: 122px;
   letter-spacing: 0.03em;
   background: #36b37f;
   border-radius: 4px;
   border-color: #fff;
   margin: 0;
-  padding: 3.5%;
+  padding: 12px;
   text-align: center;
   margin-left: 29%;
   margin-bottom: 10%;
@@ -260,13 +260,13 @@ nav img {
   font-size: 17px;
   line-height: 24px;
   color: #fff;
-  width: 45%;
+  width: 153px;
   letter-spacing: 0.03em;
   background: #36b37f;
   border-radius: 4px;
   border-color: #fff;
   margin: 0;
-  padding: 3.5%;
+  padding: 12px;
   text-align: center;
   margin-bottom: 10%;
 }
@@ -467,7 +467,7 @@ textarea {
   background-color: var(--green-color);
   color: var(--white-color);
   border: none;
-  padding: 10px 20px;
+  padding: 12px;
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -488,8 +488,8 @@ textarea {
   margin-right: auto;
   margin-bottom: auto;
   margin-left: auto;
-  width: 50%;
-  padding: 12px 20px;
+  width: 129px;
+  /* padding: 12px 20px; */
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -652,8 +652,8 @@ textarea {
   }
 
   .btn-project {
-    width: 12%;
-    padding: 1% 1%;
+    width: 153px;
+    padding: 12px;
     border: none;
     margin-bottom: 2%;
   }
@@ -678,12 +678,14 @@ textarea {
 
   /* Contact Section Start */
   .contact-section {
-    /* display: grid;
-    align-items: center;
-    grid-template-rows: 2;
-    grid-template-columns: 40% 60%; */
     flex-direction: row;
-    padding: 0 15%;
+    padding-bottom: 20%;
+    padding-left: 15%;
+    padding-right: 15%;
+    background-image: url(Icon/Frame-1.png), url(Icon/illustration-2-contact-form-desktop.png), url(Icon/Frame2.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 0% 90%, 25% 75%, 100% 100% ;
+    background-size: 13%, 10%, 15%;
   }
 
   .end-text {
@@ -703,20 +705,20 @@ textarea {
     align-items: flex-start;
   }
 
+  input[type="submit"], .form-btn {
+    padding: 12px;
+  }
+
   .email-container {
     display: none;
   }
 
   .icon {
-    /* grid-row: 2;
-    grid-column: 1 / span 2; */
     width: 100%;
   }
 
   .contact-image {
     display: none;
-    /* height: 50%;
-    width: 30%; */
   }
 
   /* Contact section end */
