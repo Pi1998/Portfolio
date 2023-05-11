@@ -560,4 +560,16 @@ textarea {
   .card-icons:hover {
     transform: scale(1.1);
   }
+
+  #full-name:hover {
+    transform: translate(10px);
+  }
+
+  #email:hover {
+    transform: translate(10px);
+  }
+
+  #message:hover {
+    transform: translate(10px);
+  }
             }
