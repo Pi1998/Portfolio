@@ -556,6 +556,7 @@ textarea {
     height: 50%;
     width: 30%;
   }
+
   /* Desktop Card icons animation transition */
   .card-icons:hover {
     transform: scale(1.1);
@@ -572,4 +573,4 @@ textarea {
   #message:hover {
     transform: translate(10px);
   }
-            }
+}
