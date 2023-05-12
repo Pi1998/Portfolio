@@ -17,9 +17,13 @@ header {
   justify-content: flex-end;
 }
 
-nav img {
+.mobile-menu {
   padding-right: 30px;
   padding-top: 20px;
+}
+
+.desktop-menu {
+  display: none;
 }
 
 .first-intro {
@@ -74,6 +78,9 @@ nav img {
   padding: 10px 10px 0 10px;
   margin-top: 1%;
   margin-bottom: 0;
+}
+.icon-section {
+  padding: 0;
 }
 
 .icon {
@@ -227,8 +234,9 @@ nav img {
 }
 
 .abt-me {
-  background-image: url(Icon/illustration-\ about\ me-\ mobile.svg);
-  background-size: 93%;
+  background-image: url(Icon/illustration\ 2-about\ me\ mobile.png), url(Icon/illustration\ 1-\ about\ me-mobile.png);
+  background-size: 18%, 18%;
+  background-position: 0% 90%, 100% 0%;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -566,10 +574,41 @@ textarea {
 /* Media Queries for Desktop Version */
 
 @media only screen and (min-width: 768px) {
+  header {
+    justify-content: center;
+  }
+
   nav {
+    text-align: center;
+    width: 100%;
+  }
+
+  .mobile-menu {
     display: none;
   }
 
+  .desktop-menu {
+    display: block;
+    justify-content: center;
+    padding: 0;
+  }
+  .desktop-menu li{
+    list-style-type: none;
+    display: inline-block;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 133%;
+    padding: 0 1%;
+    /* display: flex;
+    align-items: center;
+    text-align: center; */
+  }
+  .desktop-menu li a{
+    color: #344563;
+    text-decoration: none;
+  }
   /* First intro section start */
 
   .first-intro {
@@ -726,6 +765,10 @@ textarea {
 
   .icon {
     width: 100%;
+  }
+
+  .social {
+    gap: 25%;
   }
 
   .contact-image {
