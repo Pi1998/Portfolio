@@ -500,8 +500,12 @@ textarea {
 }
 
 .form-btn:hover {
-  background-color: var(--button-hover-color);
-  color: var(--white-color);
+  background: #36b37f;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.form-btn:active {
+  background: #008552;
 }
 
 .contact-form .form-btn {
@@ -616,6 +620,14 @@ textarea {
   .desktop-menu li a {
     color: #344563;
     text-decoration: none;
+  }
+
+  .desktop-menu li a:hover {
+    color: #7ebfa3;
+  }
+
+  .desktop-menu li a:active {
+    color: #008552;
   }
 
   /* First intro section start */
