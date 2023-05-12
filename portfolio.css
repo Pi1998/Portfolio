@@ -79,9 +79,10 @@ header {
   margin-top: 1%;
   margin-bottom: 0;
 }
-.icon-section {
+
+/* .icon-section {
   padding: 0;
-}
+} */
 
 .icon {
   display: flex;
@@ -220,6 +221,7 @@ header {
   border-radius: 4px;
   border-color: #fff;
   text-align: center;
+
   /* margin-left: 29%; */
   margin-bottom: 10%;
 }
@@ -361,7 +363,6 @@ header {
   letter-spacing: 0.03em;
   color: #36b37e;
 }
-
 
 /* contact section */
 .contact-section {
@@ -507,6 +508,7 @@ textarea {
   margin-bottom: auto;
   margin-left: auto;
   width: 129px;
+
   /* padding: 12px 20px; */
   font-size: 16px;
   font-weight: 400;
@@ -527,7 +529,8 @@ textarea {
   height: 300px;
   width: 100%;
   border-radius: 10px;
-  margin-left: 20px;
+
+  /* margin-left: 20px; */
   margin-top: -220px;
 }
 
@@ -570,9 +573,7 @@ textarea {
   }
 }
 
-
 /* Media Queries for Desktop Version */
-
 @media only screen and (min-width: 768px) {
   header {
     justify-content: center;
@@ -592,23 +593,27 @@ textarea {
     justify-content: center;
     padding: 0;
   }
-  .desktop-menu li{
+
+  .desktop-menu li {
     list-style-type: none;
     display: inline-block;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
     line-height: 133%;
     padding: 0 1%;
+
     /* display: flex;
     align-items: center;
     text-align: center; */
   }
-  .desktop-menu li a{
+
+  .desktop-menu li a {
     color: #344563;
     text-decoration: none;
   }
+
   /* First intro section start */
 
   .first-intro {
@@ -637,15 +642,11 @@ textarea {
     line-height: 125%;
     text-align: center;
     letter-spacing: 0.37px;
-  } 
+  }
 
   .text {
     line-height: 32px;
     padding: 0 20%;
-  }
-
-  .icon{
-    padding-top: 1%;
   }
 
   .down-arrow {
@@ -723,7 +724,7 @@ textarea {
     justify-content: center;
     flex-wrap: wrap;
   }
-  
+
   /* About Me Section End */
 
   /* Contact Section Start */
@@ -734,7 +735,7 @@ textarea {
     padding-right: 15%;
     background-image: url(Icon/Frame-1.png), url(Icon/illustration-2-contact-form-desktop.png), url(Icon/Frame2.png);
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: 0% 90%, 25% 75%, 100% 100% ;
+    background-position: 0% 90%, 25% 75%, 100% 100%;
     background-size: 13%, 10%, 15%;
   }
 
@@ -750,13 +751,14 @@ textarea {
     width: 100%;
   }
 
+  input[type="submit"],
+  .form-btn {
+    padding: 12px;
+  }
+
   .form-group .form-btn {
     margin: 0;
     align-items: flex-start;
-  }
-
-  input[type="submit"], .form-btn {
-    padding: 12px;
   }
 
   .email-container {
@@ -777,4 +779,3 @@ textarea {
 
   /* Contact section end */
 }
-
