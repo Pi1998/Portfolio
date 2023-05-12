@@ -80,6 +80,10 @@ header {
   margin-bottom: 0;
 }
 
+span {
+  display: block;
+}
+
 /* .icon-section {
   padding: 0;
 } */
