@@ -681,8 +681,10 @@ textarea {
   .main-container {
     display: grid;
     justify-content: center;
+
     /* grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr); */
+
     /* padding: 0 14%; */
 
     grid-template-columns: 369px 369px 369px;
@@ -708,7 +710,7 @@ textarea {
     flex-direction: row;
     align-items: center;
     padding: 8px 12px;
-    background: #EBF0EE;
+    background: #ebf0ee;
     border-radius: 4px;
   }
 
@@ -812,8 +814,7 @@ textarea {
   hr {
     display: block;
     height: 1px;
-    background-color: #DFE1E6;
-;
+    background-color: #dfe1e6;
   }
 
   .icon-section {
