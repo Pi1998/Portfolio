@@ -701,8 +701,9 @@ textarea {
   /* About Me */
 
   .abt-me {
-    background-image: url(Icon/illustration\ about\ me\ desktop.png);
-    background-size: 98.5%;
+    background-image: url(Icon/illustration-about-me-2-desktop.png), url(Icon/illustration-about\ me-1-desktop.png);
+    background-size: 18%, 18%;
+    background-position: 0% 85%, 100% 0%;
     margin-top: 8%;
     margin-bottom: 1%;
     padding-top: 7.5%;
