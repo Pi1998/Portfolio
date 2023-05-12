@@ -58,10 +58,12 @@
 - Html structure with-
   - Heading and Section
   - Introduction
+  - Social media icons
 - CSS styling with -
   - Color
   - Font Style
-  - 
+  - Hover effects
+  - FLex box and Grid
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
@@ -86,7 +88,7 @@ Clone this repository to your desired folder:
 sh
   cd my-folder
 sh
-  git clone git@github.com:Pi1998/my-portfolio.git
+  git clone git@github.com:Pi1998/Portfolio.git
 
 ### Usage
 
