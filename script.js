@@ -8,3 +8,12 @@ document.querySelectorAll(".nav-link").forEach((n) => {
     closeMenu();
   });
 });
+
+function toggleMenu() {
+  hamburger.classList.toggle("active");
+  navMobile.classList.toggle("active");
+}
+function closeMenu() {
+  hamburger.classList.remove("active");
+  navMobile.classList.remove("active");
+}
