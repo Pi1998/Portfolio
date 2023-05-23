@@ -12,7 +12,7 @@ body {
   padding: 0;
 }
 
-header {
+.nav-container {
   display: flex;
   justify-content: flex-end;
 }
@@ -582,7 +582,7 @@ textarea {
 
 /* Media Queries for Desktop Version */
 @media only screen and (min-width: 768px) {
-  header {
+  .nav-container {
     justify-content: center;
   }
 
@@ -844,10 +844,13 @@ textarea {
   display: block;
   width: 100%;
   height: 100vh;
+  padding: 0;
 }
 
 #mobile-menu ul li {
   list-style-type: none;
+  padding-bottom: 20px;
+  padding-left: 28px;
 }
 
 #mobile-menu ul li a {
