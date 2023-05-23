@@ -1,14 +1,10 @@
-const hamburgerMenu = document.getElementById('hamburger');
-const mobileMenu = document.getElementById('mobile-menu');
+const hamburger = document.querySelector(".hamburger");
+const navMobile = document.querySelector(".mobile-menu");
 
-// Function to toggle 
-function toggleMenu() {
-  if (mobileMenu.style.display === 'none') {
-    mobileMenu.style.display = 'block';
-  } else {
-    mobileMenu.style.display = 'none';
-  }
-}
+hamburger.addEventListener("click", toggleMenu);
 
-// Add a click event listener 
-hamburgerMenu.addEventListener('click', toggleMenu);
+document.querySelectorAll(".nav-link").forEach((n) => {
+  n.addEventListener("click", () => {
+    closeMenu();
+  });
+});
