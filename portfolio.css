@@ -840,6 +840,19 @@ textarea {
   display: none;
 }
 
+#closeButton {
+  display: none;
+}
+
+#closeButton {
+  text-decoration: none;
+  border: 2px solid #67798E;
+  border-radius: 0px;
+  font-size: 28px;
+  margin-right: 28px;
+  margin-top: 16px;
+}
+
 #mobile-menu ul {
   display: block;
   width: 100%;
