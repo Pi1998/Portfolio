@@ -1,9 +1,9 @@
 :root {
-  --form-border-color: #D0D9D4;
-  --green-color: #36B37E;
+  --form-border-color: #d0d9d4;
+  --green-color: #36b37e;
   --white-color: #fff;
-  --button-hover-color: #7EBFA3;
-  --content-text-color: #42526E;
+  --button-hover-color: #7ebfa3;
+  --content-text-color: #42526e;
   --button-active-color: #008552;
 }
 
@@ -22,6 +22,7 @@ body {
   width: 100%;
   position: fixed;
   left: -100%;
+
   /* padding-right: 30px; */
   padding-top: 20px;
   background: var(--white-color);
@@ -51,7 +52,7 @@ body {
 }
 
 .intro h1 {
-  color: #172B4D;
+  color: #172b4d;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -65,7 +66,7 @@ body {
 }
 
 .intro .intro2 {
-  color: #36B37E;
+  color: #36b37e;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -78,7 +79,7 @@ body {
 }
 
 .text {
-  color: #172B4D;
+  color: #172b4d;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -132,7 +133,7 @@ span {
 }
 
 .heading1 .heading {
-  color: #172B4D;
+  color: #172b4d;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -166,8 +167,8 @@ span {
   border-radius: 8px;
   width: 327px;
   height: 474px;
-  background-color: #EBF0EE;
-  border: 1px solid #D0D9D4;
+  background-color: #ebf0ee;
+  border: 1px solid #d0d9d4;
   margin-left: 6%;
   margin-bottom: 2%;
 }
@@ -210,8 +211,8 @@ span {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #3A4A42;
-  background: #EBF0EE;
+  color: #3a4a42;
+  background: #ebf0ee;
   border-radius: 4px;
   padding: 2% 3.8%;
   margin-top: 4%;
@@ -232,17 +233,18 @@ span {
   width: 122px;
   height: 48px;
   letter-spacing: 0.03em;
-  background: #36B37F;
+  background: #36b37f;
   border: none;
   border-radius: 4px;
   border-color: #fff;
   text-align: center;
+
   /* margin-left: 29%; */
   margin-bottom: 7%;
 }
 
 .btn:hover {
-  background: #36B37F;
+  background: #36b37f;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
@@ -282,7 +284,7 @@ span {
   font-size: 20px;
   line-height: 160%;
   text-align: center;
-  color: #42526E;
+  color: #42526e;
   padding-left: 5%;
   padding-right: 5%;
   margin-top: 2%;
@@ -298,7 +300,7 @@ span {
   width: 153px;
   height: 48px;
   letter-spacing: 0.03em;
-  background: #36B37F;
+  background: #36b37f;
   border: none;
   border-radius: 4px;
   border-color: #fff;
@@ -307,7 +309,7 @@ span {
 }
 
 .btn-project:hover {
-  background: #36B37F;
+  background: #36b37f;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
@@ -332,8 +334,8 @@ span {
   border-radius: 8px;
   width: 327px;
   height: 316px;
-  background: #EBF0EE;
-  border: 1px solid #D0D9D4;
+  background: #ebf0ee;
+  border: 1px solid #d0d9d4;
   margin-bottom: 4%;
   margin-top: 2%;
 }
@@ -376,7 +378,7 @@ span {
   font-size: 12px;
   line-height: 133%;
   letter-spacing: 0.03em;
-  color: #36B37E;
+  color: #36b37e;
 }
 
 /* contact section */
@@ -407,7 +409,7 @@ hr {
   font-size: 40px;
   line-height: 130%;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
   padding: 0 5%;
 }
 
@@ -455,7 +457,7 @@ textarea {
   top: 0;
   bottom: 0;
   background: var(--white-color);
-  border: 1px solid #60C095;
+  border: 1px solid #60c095;
   border-radius: 4px;
   resize: none;
   height: 200px;
@@ -474,7 +476,7 @@ textarea {
   border: 1px solid var(--form-border-color);
   border-radius: 4px;
   background: var(main-background-color);
-  color: #3C3C3C;
+  color: #3c3c3c;
   transition: border-color 0.3s ease-in-out;
 }
 
@@ -491,7 +493,7 @@ textarea {
   border: 1px solid var(--form-border-color);
   border-radius: 4px;
   background: var(main-background-color);
-  color: #3C3C3C;
+  color: #3c3c3c;
   transition: border-color 0.3s ease-in-out;
 }
 
@@ -515,7 +517,7 @@ textarea {
 }
 
 .form-btn:hover {
-  background: #36B37F;
+  background: #36b37f;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
@@ -531,6 +533,7 @@ textarea {
   margin-bottom: auto;
   margin-left: auto;
   width: 129px;
+
   /* padding: 12px 20px; */
   font-size: 16px;
   font-weight: 400;
@@ -551,6 +554,7 @@ textarea {
   height: 300px;
   width: 100%;
   border-radius: 10px;
+
   /* margin-left: 20px; */
   margin-top: -220px;
 }
@@ -567,11 +571,14 @@ textarea {
 }
 
 /* contact section- END */
-/* DOM-mobile*/
+
+/* DOM-mobile */
+
 /* .mobile-menu {
   display: none;
   margin-top: 20px;
 } */
+
 /* #closeButton {
   display: none;
   float: right;
@@ -597,7 +604,7 @@ textarea {
 }
 
 .mobile-menu ul li a {
-  color: #3A4A42;
+  color: #3a4a42;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -613,12 +620,13 @@ textarea {
   left: 0;
   width: 100%;
   height: 60px;
-  background-color: #ffffff; 
+  background-color: #fff;
   z-index: 9999;
 }
 
 .hamburger {
   display: block;
+
   /* z-index: 200; */
   position: fixed;
   top: 3%;
@@ -665,7 +673,6 @@ textarea {
 
 /* Media Queries for Desktop Version */
 @media only screen and (min-width: 768px) {
-
   /* .nav-container {
     justify-content: center;
   } */
@@ -693,6 +700,7 @@ textarea {
     font-size: 15px;
     line-height: 133%;
     padding: 0 1%;
+
     /* display: flex;
     align-items: center;
     text-align: center; */
@@ -704,7 +712,7 @@ textarea {
   }
 
   .desktop-menu li a:hover {
-    color: #7EBFA3;
+    color: #7ebfa3;
   }
 
   .desktop-menu li a:active {
@@ -752,6 +760,7 @@ textarea {
   }
 
   /* First intro section End */
+
   /* Recent Work Section Start */
   .indicator img {
     display: none;
@@ -760,8 +769,10 @@ textarea {
   .main-container {
     display: grid;
     justify-content: center;
+
     /* grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr); */
+
     /* padding: 0 14%; */
     grid-template-columns: 369px 369px 369px;
     grid-template-rows: 474px 474px;
@@ -786,12 +797,14 @@ textarea {
     flex-direction: row;
     align-items: center;
     padding: 8px 12px;
-    background: #EBF0EE;
+    background: #ebf0ee;
     border-radius: 4px;
   }
 
   /* Recent Work Section End */
+
   /* About Me Section Start */
+
   /* About Me */
   .abt-me {
     background-image: url(Icon/illustration-about-me-2-desktop.png), url(Icon/illustration-about\ me-1-desktop.png);
@@ -835,6 +848,7 @@ textarea {
   }
 
   /* About Me Section End */
+
   /* Contact Section Start */
   .contact-section {
     flex-direction: row;
@@ -870,7 +884,7 @@ textarea {
   }
 
   .form-btn:hover {
-    background: #36B37F;
+    background: #36b37f;
     box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   }
 
@@ -885,7 +899,7 @@ textarea {
   hr {
     display: block;
     height: 1px;
-    background-color: #DFE1E6;
+    background-color: #dfe1e6;
   }
 
   .icon-section {
