@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +9,19 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="portfolio.css">
 </head>
+
 <body>
     <header>
-        <nav>
-            <img src="Icon/Icon - Menu.png" class="mobile-menu" alt="Menu Button">
+        <nav id="navbtn">
+            <a href="#" id="hamburger"><img src="Icon/Icon - Menu.png" class="mobile-menu" alt="Menu Button"></a>
             <ul class="desktop-menu">
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <nav id="mobile-menu">
+            <ul>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
@@ -65,7 +74,7 @@
                 <img src="Icon/Indicator.png" alt="Indicator Icon">
             </div>
         </div>
-    
+
         <div class="main-container">
             <div class="card">
                 <div class="text-container">
@@ -124,7 +133,7 @@
                 </div>
             </div>
             <div class="card">
-    
+
                 <div class="text-container">
                     <h2 class="project-title">Multi-Post Stories Gain+Glory</h2>
                     <ul class="tag">
@@ -150,10 +159,10 @@
                     <div class="btn-container">
                         <button class="btn">See Project</button>
                     </div>
-                    
+
                 </div>
             </div>
-        
+
         </div>
     </section>
     <section>
@@ -163,11 +172,11 @@
             </h2>
             <p class="txt-abt-me">
                 I can help you build a product , feature or website Look through some of my work and experience!
-                If you like what you see and have a project you need coded, 
+                If you like what you see and have a project you need coded,
                 <span>don’t hesitate to contact me.</span>
             </p>
             <button class="btn-project">Get my resume</button>
-            
+
         </div>
         <ul class="resume-container">
             <li class="resume-items">
@@ -208,64 +217,70 @@
         <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
     </section> -->
 
-<!-- Contact me section -->
-<section>
-    <div class="contact-section">
-        <div class="end-text">
-            <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
-        </div>
-        <div class="form-container">
-            <form class="contact-form" action="https://formspree.io/f/mvonljda" method="POST">
-                <div class="form-group">
-                    <label for="full-name"></label>
-                <input type="text" id="full-name" name="full-name" placeholder="Full Name" required maxlength="30">
+    <!-- Contact me section -->
+    <section>
+        <div class="contact-section">
+            <div class="end-text">
+                <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+                </p>
+            </div>
+            <div class="form-container">
+                <form class="contact-form" action="https://formspree.io/f/mvonljda" method="POST">
+                    <div class="form-group">
+                        <label for="full-name"></label>
+                        <input type="text" id="full-name" name="full-name" placeholder="Full Name" required
+                            maxlength="30">
+                    </div>
+                    <div class="form-group">
+                        <label for="email"></label>
+                        <input type="email" id="email" name="email" placeholder="Email address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message"></label>
+                        <textarea id="message" name="message" placeholder="Hey, I'd like to connect with you about..."
+                            required maxlength="500"></textarea>
+
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Get in touch" class="form-btn">
+                    </div>
+
+                </form>
+                <div class="email-container">
+                    <p class="email-text">pi1998@gmail.com</p>
                 </div>
-                <div class="form-group">
-                    <label for="email"></label>
-                    <input type="email" id="email" name="email" placeholder="Email address" required>
-                </div>
-                <div class="form-group">
-                    <label for="message"></label>
-                <textarea id="message" name="message" placeholder="Hey, I'd like to connect with you about..." required
-                    maxlength="500"></textarea>
-    
-                </div>
-                <div class="form-group">
-                    <input type="submit" value="Get in touch" class="form-btn">
-                </div>
-    
-            </form>
-            <div class="email-container">
-                <p class="email-text">pi1998@gmail.com</p>
             </div>
         </div>
-    </div>
-    <div><hr></div>
-    <div class="icon-section">
-        <div class="icon">
-            <ul class="social">
-                <li>
-                    <a href=""><img src="Icon/twitter.svg" alt="Twitter Icon"></a>
-                </li>
-                <li>
-                    <a href=""><img src="Icon/Linkedin icon.svg" alt="Linkedin Icon"></a>
-                </li>
-                <li>
-                    <a href=""><img src="Icon/medium.svg" alt="Medium Icon"></a>
-                </li>
-                <li>
-                    <a href=""><img src="Icon/github.svg" alt="Github Icon"></a>
-                </li>
-                <li>
-                    <a href=""><img src="Icon/angellist.svg" alt="Angellist Icon"></a>
-                </li>
-            </ul>
+        <div>
+            <hr>
         </div>
-    </div>
-    <div class="contact-image"></div>
+        <div class="icon-section">
+            <div class="icon">
+                <ul class="social">
+                    <li>
+                        <a href=""><img src="Icon/twitter.svg" alt="Twitter Icon"></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="Icon/Linkedin icon.svg" alt="Linkedin Icon"></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="Icon/medium.svg" alt="Medium Icon"></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="Icon/github.svg" alt="Github Icon"></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="Icon/angellist.svg" alt="Angellist Icon"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contact-image"></div>
 
-    
 
-</section>
+
+    </section>
+    <script src="script.js"></script>
 </body>
+
 </html>
