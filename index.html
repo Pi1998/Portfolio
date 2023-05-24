@@ -233,7 +233,7 @@
                 </p>
             </div>
             <div class="form-container">
-                <form class="contact-form" action="https://formspree.io/f/mvonljda" method="POST">
+                <form class="contact-form" id="form" action="https://formspree.io/f/mvonljda" method="POST">
                     <div class="form-group">
                         <label for="full-name"></label>
                         <input type="text" id="full-name" name="full-name" placeholder="Full Name" required
@@ -250,7 +250,8 @@
 
                     </div>
                     <div class="form-group">
-                        <input type="submit" value="Get in touch" class="form-btn">
+                        <input type="submit" value="Get in touch" class="form-btn" id="btn">
+                        <p id="error-msg">The email should be in lowercase!</p>
                     </div>
 
                 </form>
@@ -288,7 +289,9 @@
 
 
     </section>
+    
     <script src="script.js"></script>
+    <script src="form.js"></script>
 </body>
 
 </html>
