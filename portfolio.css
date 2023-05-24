@@ -12,14 +12,24 @@ body {
   padding: 0;
 }
 
-header {
+/* .nav-container {
   display: flex;
   justify-content: flex-end;
-}
+  width: 100%;
+} */
 
 .mobile-menu {
-  padding-right: 30px;
+  width: 100%;
+  position: fixed;
+  left: -100%;
+
+  /* padding-right: 30px; */
   padding-top: 20px;
+  background: var(--white-color);
+}
+
+.mobile-menu.active {
+  left: 0;
 }
 
 .desktop-menu {
@@ -31,6 +41,7 @@ header {
   background-size: 93%;
   background-position: bottom -4px right;
   background-repeat: no-repeat;
+  margin-top: 45px;
 }
 
 .intro {
@@ -87,7 +98,6 @@ span {
 /* .icon-section {
   padding: 0;
 } */
-
 .icon {
   display: flex;
   justify-content: center;
@@ -455,7 +465,7 @@ textarea {
 
 .form-group input {
   box-sizing: border-box;
-  position: relative;
+  position: inherit;
   width: 100%;
   padding: 12px;
   font-family: 'Inter', sans-serif;
@@ -472,7 +482,7 @@ textarea {
 
 .form-group textarea {
   box-sizing: border-box;
-  position: relative;
+  position: inherit;
   width: 100%;
   padding: 12px;
   font-family: 'Inter', sans-serif;
@@ -517,7 +527,7 @@ textarea {
 
 .contact-form .form-btn {
   box-sizing: border-box;
-  position: relative;
+  position: inherit;
   margin-top: 20px;
   margin-right: auto;
   margin-bottom: auto;
@@ -562,8 +572,93 @@ textarea {
 
 /* contact section- END */
 
-/* Media Queries for Mobile Version */
+/* DOM-mobile */
 
+/* .mobile-menu {
+  display: none;
+  margin-top: 20px;
+} */
+
+/* #closeButton {
+  display: none;
+  float: right;
+  text-decoration: none;
+  border: 2px solid #67798E;
+  border-radius: 0px;
+  font-size: 28px;
+  margin-right: 28px;
+  margin-top: 16px;
+  border: none;
+} */
+.mobile-menu ul {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+}
+
+.mobile-menu ul li {
+  list-style-type: none;
+  padding-bottom: 20px;
+  padding-left: 28px;
+}
+
+.mobile-menu ul li a {
+  color: #3a4a42;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  text-decoration: none;
+}
+
+.hamburger-container {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  z-index: 9999;
+}
+
+.hamburger {
+  display: block;
+
+  /* z-index: 200; */
+  position: fixed;
+  top: 3%;
+  right: 8%;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: var(--content-text-color);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.disable-scroll {
+  overflow: hidden;
+}
+
+/* Media Queries for Mobile Version */
 @media only screen and (min-width: 375px) {
   .contact-form .contact-btn {
     width: 50%;
@@ -582,11 +677,10 @@ textarea {
 
 /* Media Queries for Desktop Version */
 @media only screen and (min-width: 768px) {
-  header {
+  /* .nav-container {
     justify-content: center;
-  }
-
-  nav {
+  } */
+  .navbtn {
     text-align: center;
     width: 100%;
   }
@@ -630,7 +724,6 @@ textarea {
   }
 
   /* First intro section start */
-
   .first-intro {
     background-image: url(Icon/Header-llustration-desktop@2x.png);
     background-size: cover;
@@ -673,7 +766,6 @@ textarea {
   /* First intro section End */
 
   /* Recent Work Section Start */
-
   .indicator img {
     display: none;
   }
@@ -686,7 +778,6 @@ textarea {
     grid-template-rows: repeat(2, 1fr); */
 
     /* padding: 0 14%; */
-
     grid-template-columns: 369px 369px 369px;
     grid-template-rows: 474px 474px;
     row-gap: 32px;
@@ -719,7 +810,6 @@ textarea {
   /* About Me Section Start */
 
   /* About Me */
-
   .abt-me {
     background-image: url(Icon/illustration-about-me-2-desktop.png), url(Icon/illustration-about\ me-1-desktop.png);
     background-size: 18%, 18%;
@@ -744,7 +834,6 @@ textarea {
   }
 
   /* Resume list */
-
   .resume-container {
     justify-content: space-between;
     grid-template-columns: repeat(3, 1fr);
@@ -831,5 +920,16 @@ textarea {
 
   .contact-image {
     display: none;
+  }
+
+  /* DOM */
+
+  .hamburger-container {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+    cursor: pointer;
   }
 }
