@@ -658,6 +658,10 @@ textarea {
   overflow: hidden;
 }
 
+#error-msg {
+  display: none;
+}
+
 /* Media Queries for Mobile Version */
 @media only screen and (min-width: 375px) {
   .contact-form .contact-btn {
@@ -931,5 +935,9 @@ textarea {
   .hamburger {
     display: none;
     cursor: pointer;
+  }
+
+  #error-msg {
+    display: none;
   }
 }
