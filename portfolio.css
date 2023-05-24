@@ -22,7 +22,7 @@ body {
   width: 100%;
   position: fixed;
   left: -100%;
-  
+
   /* padding-right: 30px; */
   padding-top: 20px;
   background: var(--white-color);

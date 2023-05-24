@@ -22,4 +22,3 @@ document.querySelectorAll('.nav-link').forEach((n) => {
     closeMenu();
   });
 });
-
