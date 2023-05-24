@@ -22,7 +22,7 @@ body {
   width: 100%;
   position: fixed;
   left: -100%;
-
+  
   /* padding-right: 30px; */
   padding-top: 20px;
   background: var(--white-color);
@@ -465,7 +465,7 @@ textarea {
 
 .form-group input {
   box-sizing: border-box;
-  position: relative;
+  position: inherit;
   width: 100%;
   padding: 12px;
   font-family: 'Inter', sans-serif;
@@ -482,7 +482,7 @@ textarea {
 
 .form-group textarea {
   box-sizing: border-box;
-  position: relative;
+  position: inherit;
   width: 100%;
   padding: 12px;
   font-family: 'Inter', sans-serif;
@@ -527,7 +527,7 @@ textarea {
 
 .contact-form .form-btn {
   box-sizing: border-box;
-  position: relative;
+  position: inherit;
   margin-top: 20px;
   margin-right: auto;
   margin-bottom: auto;
@@ -652,6 +652,10 @@ textarea {
 
 .hamburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
+}
+
+.disable-scroll {
+  overflow: hidden;
 }
 
 /* Media Queries for Mobile Version */
