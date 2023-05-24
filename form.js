@@ -12,3 +12,6 @@ form.addEventListener("submit", function(event) {
       return false;
     }
   });
+
+document.getElementById("error-msg").style.color = "Green";
+document.getElementById("error-msg").style.fontSize = "120%";
