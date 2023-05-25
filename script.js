@@ -27,3 +27,12 @@ const fullNameInput = document.getElementById('full-name');
 const emailInput = document.getElementById('email');
 const messageInput = document.getElementById('message');
 const form = document.getElementById('form');
+
+const savedData = localStorage.getItem('formData');
+if (savedData) {
+  const { fullName, email, message } = JSON.parse(savedData);
+  fullNameInput.value = fullName;
+  emailInput.value = email;
+  messageInput.value = message;
+}
+
