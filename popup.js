@@ -84,3 +84,25 @@ const cardsInfo = [
     },
     // Add more project objects as needed
   ];
+
+  const cards = () => {
+    const card = cardsInfo.map(
+      (cardsInfo) => ` <div class="card">
+                              <div class="text-container">
+                                  <h2 class="project-title"> ${cardsInfo.name}</h2>
+                                  <ul class="tag">
+                                      <li>${cardsInfo.technologies.tech1}</li>
+                                      <li>${cardsInfo.technologies.tech2}</li>
+                                      <li>${cardsInfo.technologies.tech3}</li>
+                                      <li>${cardsInfo.technologies.tech4}</li>
+                                  </ul>
+                                  <div class="btn-container">
+                                      <button onclick= 'popupInfo(${cardsInfo.id})' type= 'submit' class="btn">See Project</button>
+                                  </div>
+                              </div>
+                        </div>
+        `,
+    );
+    return card;
+  };
+  
