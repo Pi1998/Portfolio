@@ -36,3 +36,12 @@ if (savedData) {
   messageInput.value = message;
 }
 
+// Function to save form data to local storage
+function saveFormData() {
+  const formData = {
+    fullName: fullNameInput.value,
+    email: emailInput.value,
+    message: messageInput.value
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+}
