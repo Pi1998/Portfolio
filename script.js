@@ -22,3 +22,8 @@ document.querySelectorAll('.nav-link').forEach((n) => {
     closeMenu();
   });
 });
+
+const fullNameInput = document.getElementById('full-name');
+const emailInput = document.getElementById('email');
+const messageInput = document.getElementById('message');
+const form = document.getElementById('form');
