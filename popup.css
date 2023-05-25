@@ -1,0 +1,49 @@
+/*.disable-scroll {
+    overflow: scroll;
+}*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.popup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 16px;
+    gap: 12px;
+    position: absolute;
+    width: 343px;
+    height: 836px;
+    left: calc(50% - 343px/2);
+    top: 20px;
+    background: #FFFFFF;
+    border: 1px solid #DFE1E6;
+    border-radius: 16px;
+}
+
+.popup-snapshot {
+    background-image: url(popup-img/Snapshoot\ Portfolio-mobile.png);
+    height: 220px;
+    width: 311px;
+    left: 16px;
+    top: 16px;
+    border-radius: 8px;
+}
+
+.popup-close-btn-container {
+    display: inline-block;
+
+    width: 100%;
+}
+
+.popup-close-btn {
+    border: none;
+    position: absolute;
+    top: 4.55%;
+    right: 10.3%;
+    background-color: transparent;
+    cursor: pointer;
+}
