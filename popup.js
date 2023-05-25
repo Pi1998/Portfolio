@@ -105,4 +105,44 @@ const cardsInfo = [
     );
     return card;
   };
-  
+
+  const popupInfo = (projectId) => {
+    if (projectId == null) return;
+    let checked = cardsInfo.filter((elem) => elem.id === projectId);
+    checked = checked.shift();
+    const modalMobile = `<div id='modal' class='modal'>
+                              <div class="popup-snapshot">
+                                <div class="popup-close-btn-container">
+                                    <button class="popup-close-btn"><img src="popup-img/Icon.png" alt="Close Button Image"></button>
+                                </div>
+                              </div>
+                              <div class="popup-primary-text">
+                                  <h1 class="ppt-text">${checked.name1}</h1>
+                                  <ul class="ppt-tag">
+                                      <li>${checked.technologies.tech1}</li>
+                                      <li>${checked.technologies.tech2}</li>
+                                      <li>${checked.technologies.tech3}</li>
+                                  </ul>
+                              </div>
+                              <div class="popup-left-block">
+                                  <p class="plb-text">${checked.description}</p>
+                              </div>
+                              <div class="popup-action">
+                                  <button class="popup-live-btn">
+                                      <p class="live-btn-text">See Live</p>
+                                      <img class="live-btn-icon" src="popup-img/Icon - Export.png" alt="Image of export icon">
+                                  </button>
+                                  <button class="popup-source-btn">
+                                      <p class="source-btn-text">See Source</p>
+                                      <img class="source-btn-icon" src="popup-img/Icon -GitHub.png" alt="Image of Github icon">
+                                  </button>
+                              </div>
+                          </div>
+                          <div class= 'overlay'></div>
+                          `;
+    document.getElementById('popupContainer').innerHTML = modalMobile;
+    const modal = document.querySelector('.modal');
+    const overlay = document.querySelector('.overlay');
+    modal.classList.add('active');
+    overlay.classList.add('active');
+  };
