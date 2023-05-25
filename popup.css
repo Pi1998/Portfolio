@@ -98,3 +98,50 @@
     width: 311px;
     height: 313px;
 }
+
+.plb-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #344563;
+}
+
+.popup-action {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    width: 311px;
+    height: 56px;
+}
+
+.popup-live-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 10px;
+    gap: 12px;
+    position: inherit;
+    width: 135px;
+    height: 48px;
+    left: 0px;
+    top: 4px;
+    background: #36B37F;
+    border-radius: 4px;
+    border: none;
+}
+
+.live-btn-text {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 141%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    margin-top: 2px;
+}
