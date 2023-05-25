@@ -8,7 +8,7 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-  - [🚀 Live Demo](#live-demo)
+  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -119,6 +119,11 @@ sh
 
 - GitHub: [@Pi1998](https://github.com/Pi1998)
 - LinkedIn: [Shinn Thant Swam Ye](https://www.linkedin.com/in/shinn-thant-swam-ye-617a66253/)
+  
+
+👤 Garvin Chimone
+
+- GitHub: [@Chimoneg27](https://github.com/Chimoneg27)
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
