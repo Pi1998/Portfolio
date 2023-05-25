@@ -41,7 +41,7 @@ function saveFormData() {
   const formData = {
     fullName: fullNameInput.value,
     email: emailInput.value,
-    message: messageInput.value
+    message: messageInput.value,
   };
   localStorage.setItem('formData', JSON.stringify(formData));
 }
