@@ -1,7 +1,5 @@
 const contactForm = document.getElementById('form');
 const email = document.getElementById('email');
-// const submit = document.getElementById('btn');
-const errorMessage = document.getElementById('error-msg');
 
 contactForm.addEventListener('submit', (event) => {
   if (email.value === email.value.toLowerCase()) {
@@ -12,6 +10,8 @@ contactForm.addEventListener('submit', (event) => {
   return false;
 });
 
-document.getElementById('error-msg').style.color = 'Green';
-document.getElementById('error-msg').style.fontSize = '100%';
-document.getElementById('error-msg').style.fontFamily = 'Inter';
+const errorMessage = document.getElementById('error-msg');
+errorMessage.style.color = 'Green';
+errorMessage.style.fontSize = '100%';
+errorMessage.style.fontFamily = 'Inter';
+
