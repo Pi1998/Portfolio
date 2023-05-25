@@ -146,3 +146,20 @@ const cardsInfo = [
     modal.classList.add('active');
     overlay.classList.add('active');
   };
+
+  const openfirst = () => {
+    document.getElementById('popupContainer').innerHTML = modalMobile;
+    const modal = document.querySelector('.modal');
+    const overlay = document.querySelector('.overlay');
+    modal.classList.add('active');
+    overlay.classList.add('active');
+  };
+  
+  function closeModal() {
+    const modal = document.querySelector('.modal');
+    const overlay = document.querySelector('.overlay');
+    modal.classList.remove('active');
+    overlay.classList.remove('active');
+    document.getElementById('popupContainer').removeChild(document.querySelector('.modal'));
+  }
+  
