@@ -22,3 +22,28 @@ document.querySelectorAll('.nav-link').forEach((n) => {
     closeMenu();
   });
 });
+
+const fullNameInput = document.getElementById('full-name');
+const emailInput = document.getElementById('email');
+const messageInput = document.getElementById('message');
+const form = document.getElementById('form');
+
+const savedData = localStorage.getItem('formData');
+if (savedData) {
+  const { fullName, email, message } = JSON.parse(savedData);
+  fullNameInput.value = fullName;
+  emailInput.value = email;
+  messageInput.value = message;
+}
+
+// Function to save form data to local storage
+function saveFormData() {
+  const formData = {
+    fullName: fullNameInput.value,
+    email: emailInput.value,
+    message: messageInput.value,
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+}
+
+form.addEventListener('input', saveFormData);
