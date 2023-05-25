@@ -47,3 +47,54 @@
     background-color: transparent;
     cursor: pointer;
 }
+
+.popup-primary-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    width: 261px;
+    height: 179px;
+}
+.ppt-text {
+    width: 259px;
+    height: 135px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 138%;
+    color: #172B4D;
+}
+.ppt-tag {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    padding: 0px;
+    gap: 8px;
+    width: 261px;
+    height: 32px;
+}
+.ppt-tag li {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #3A4A42;
+    background: #EBF0EE;
+    border-radius: 4px;
+    padding: 2% 3.8%;
+}
+.popup-left-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+    width: 311px;
+    height: 313px;
+}
