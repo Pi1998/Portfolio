@@ -13,4 +13,5 @@ contactForm.addEventListener('submit', (event) => {
 });
 
 document.getElementById('error-msg').style.color = 'Green';
-document.getElementById('error-msg').style.fontSize = '120%';
+document.getElementById('error-msg').style.fontSize = '100%';
+document.getElementById('error-msg').style.fontFamily = 'Inter';
