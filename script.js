@@ -45,3 +45,5 @@ function saveFormData() {
   };
   localStorage.setItem('formData', JSON.stringify(formData));
 }
+
+form.addEventListener('input', saveFormData);
