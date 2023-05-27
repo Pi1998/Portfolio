@@ -690,6 +690,7 @@ textarea {
   .header-wrapper {
     width: 100%;
   }
+
   .navbtn {
     text-align: center;
     width: 100%;
@@ -781,6 +782,7 @@ textarea {
     width: 100%;
     margin-top: 0;
   }
+
   .indicator img {
     display: none;
   }
