@@ -8,10 +8,11 @@
     <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="popup.css">
 </head>
 
 <body class="disable-scroll">
-    <header>
+    <header class="header-wrapper">
         <nav>
             <div class="navbtn">
                 <ul class="desktop-menu">
@@ -75,107 +76,15 @@
         </div>
     </section>
 
-    <section id="portfolio-section">
+    <section id ="portfolio-section" class="portfolio-container">
         <div class="heading1">
             <h2 class="heading">My Recent Works</h2>
             <div class="indicator">
                 <img src="Icon/Indicator.png" alt="Indicator Icon">
             </div>
         </div>
-
-        <div class="main-container" id="project-section">
-            <!-- <div class="card">
-                <div class="text-container">
-                    <h2 class="project-title">Multi-Post Stories Gain+Glory</h2>
-                    <ul class="tag">
-                        <li>Ruby on Rails</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>HTML</li>
-                    </ul>
-                    <div class="btn-container">
-                        <button class="btn">See Project</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="text-container">
-                    <h2 class="project-title">Multi-Post Stories Gain+Glory</h2>
-                    <ul class="tag">
-                        <li>Ruby on Rails</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>HTML</li>
-                    </ul>
-                    <div class="btn-container">
-                        <button class="btn">See Project</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="text-container">
-                    <h2 class="project-title">Multi-Post Stories Gain+Glory</h2>
-                    <ul class="tag">
-                        <li>Ruby on Rails</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>HTML</li>
-                    </ul>
-                    <div class="btn-container">
-                        <button class="btn">See Project</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="text-container">
-                    <h2 class="project-title">Multi-Post Stories Gain+Glory</h2>
-                    <ul class="tag">
-                        <li>Ruby on Rails</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>HTML</li>
-                    </ul>
-                    <div class="btn-container">
-                        <button class="btn">See Project</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-
-                <div class="text-container">
-                    <h2 class="project-title">Multi-Post Stories Gain+Glory</h2>
-                    <ul class="tag">
-                        <li>Ruby on Rails</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>HTML</li>
-                    </ul>
-                    <div class="btn-container">
-                        <button class="btn">See Project</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="text-container">
-                    <h2 class="project-title">Multi-Post Stories Gain+Glory</h2>
-                    <ul class="tag">
-                        <li>Ruby on Rails</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>HTML</li>
-                    </ul>
-                    <div class="btn-container">
-                        <button class="btn">See Project</button>
-                    </div>
-
-                </div>
-            </div> -->
-
-        </div>
-        <div class="popup-container" id="popupContainer">
-
-        </div>
     </section>
+
     <section id="aboutme-section">
         <div class="abt-me">
             <h2 class="head-abt-me">
@@ -224,9 +133,6 @@
             </li>
         </ul>
     </section>
-    <!-- <section class="end-text">
-        <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
-    </section> -->
 
     <!-- Contact me section -->
     <section id="contact-section">
@@ -292,8 +198,8 @@
 
 
     </section>
-    <script src="popup.js"></script>
     <script src="script.js"></script>
+    <script src="popup.js"></script>
     <script src="form.js"></script>
 </body>
 
