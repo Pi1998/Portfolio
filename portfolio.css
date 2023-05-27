@@ -41,7 +41,7 @@ body {
   background-size: 93%;
   background-position: bottom -4px right;
   background-repeat: no-repeat;
-  margin-top: 45px;
+  margin-top: 20px;
 }
 
 .intro {
@@ -123,6 +123,11 @@ span {
   justify-content: center;
   margin-top: 10%;
   margin-bottom: 10%;
+}
+
+.portfolio-container {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .heading1 {
@@ -620,8 +625,8 @@ textarea {
   left: 0;
   width: 100%;
   height: 60px;
-  background-color: #fff;
-  z-index: 9999;
+  background-color: transparent;
+  z-index: 100;
 }
 
 .hamburger {
@@ -640,6 +645,7 @@ textarea {
   height: 3px;
   margin: 5px 0;
   background-color: var(--content-text-color);
+  z-index: 2;
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -654,9 +660,9 @@ textarea {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-.disable-scroll {
+/* .disable-scroll {
   overflow: hidden;
-}
+} */
 
 #error-msg {
   display: none;
@@ -681,9 +687,9 @@ textarea {
 
 /* Media Queries for Desktop Version */
 @media only screen and (min-width: 768px) {
-  /* .nav-container {
-    justify-content: center;
-  } */
+  .header-wrapper {
+    width: 100%;
+  }
   .navbtn {
     text-align: center;
     width: 100%;
@@ -694,7 +700,7 @@ textarea {
   }
 
   .desktop-menu {
-    display: block;
+    display: flex;
     justify-content: center;
     padding: 0;
   }
@@ -770,6 +776,11 @@ textarea {
   /* First intro section End */
 
   /* Recent Work Section Start */
+
+  .portfolio-container {
+    width: 100%;
+    margin-top: 0;
+  }
   .indicator img {
     display: none;
   }
