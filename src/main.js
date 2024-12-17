@@ -85,14 +85,14 @@ const data = [
   },
   {
     name: 'StreamHub',
-    description: 'StreamHub is a web app that allows users to search for movies and TV shows by integrating an API for fetching movie data. It offers information about various media, including their ratings, release dates, and more.',
+    description: 'StreamHub is a web app designed for users to search and interact with movies and TV shows. It integrates APIs for fetching movie data and user interactions like likes, comments, and reservations. The app offers a user-friendly interface with optimized performance, interactive popups, counter functionality, and Jest unit testing to ensure reliability.',
     img: 'src/project-img/streamHub.png',
     firstlineTitle: 'StreamHub',
     secondlineTitle: 'Find Movies Easily',
     languages: ['JavaScript', 'HTML', 'CSS'],
     technologies: ['OMDb API', 'JavaScript', 'CSS', 'HTML', 'API Integration'],
     linkLiveVersion: 'https://goldinium.me/StreamHub/dist/index.html',
-    linkSource: 'https://github.com/Pi1998/StreamHub',
+    linkSource: 'https://github.com/Goldinium/StreamHub',
   },
   {
     name: 'InterArtction',
