@@ -831,8 +831,8 @@ textarea {
     background-image: url(Icon/illustration-about-me-2-desktop.png), url(Icon/illustration-about\ me-1-desktop.png);
     background-size: 18%, 18%;
     background-position: 0% 85%, 100% 0%;
-    margin-top: 8%;
-    margin-bottom: 1%;
+    margin-top: 5%;
+    margin-bottom: 8%;
     padding-top: 7.5%;
   }
 
@@ -863,8 +863,9 @@ textarea {
   .resume-items {
     width: 97%;
     height: 316px;
+    padding-top: 5%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
 

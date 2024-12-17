@@ -1,201 +1,3 @@
-/* .disable-scroll {
-    overflow: scroll;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-.popup-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    box-sizing: border-box;
-    padding: 16px;
-    gap: 12px;
-    position: absolute;
-    width: 343px;
-    height: 836px;
-    left: calc(50% - 343px/2);
-    top: 20px;
-    background: #FFFFFF;
-    border: 1px solid #DFE1E6;
-    border-radius: 16px;
-}
-
-.popup-snapshot {
-    background-image: url(popup-img/Snapshoot\ Portfolio-mobile.png);
-    height: 220px;
-    width: 311px;
-    left: 16px;
-    top: 16px;
-    border-radius: 8px;
-}
-
-.popup-close-btn-container {
-  position: fixed;
-  top: 23px;
-  right: 7vw;
-}
-
-.popup-close-btn {
-  cursor: pointer;
-  font-size: 35px;
-  color: #fff;
-  outline: none;
-  border-radius: 5px;
-  padding: 0 8px;
-  background-color: unset;
-  border: none;
-}
-
-.popup-container #project-img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-.popup-primary-text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 12px;
-    width: 261px;
-    height: 179px;
-}
-.ppt-text {
-    width: 259px;
-    height: 135px;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 138%;
-    color: #172B4D;
-}
-.ppt-tag {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    list-style-type: none;
-    padding: 0px;
-    gap: 8px;
-    width: 261px;
-    height: 32px;
-}
-.ppt-tag li {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    color: #3A4A42;
-    background: #EBF0EE;
-    border-radius: 4px;
-    padding: 2% 3.8%;
-}
-.popup-left-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    gap: 12px;
-    width: 311px;
-    height: 313px;
-}
-
-.plb-text {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    color: #344563;
-}
-
-.popup-action {
-    display: flex;
-    flex-direction: row;
-    gap: 18px;
-    width: 311px;
-    height: 56px;
-}
-
-.popup-live-btn {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 12px 10px;
-    gap: 12px;
-    position: inherit;
-    width: 135px;
-    height: 48px;
-    left: 0px;
-    top: 4px;
-    background: #36B37F;
-    border-radius: 4px;
-    border: none;
-}
-
-.live-btn-text {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 141%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-    margin-top: 2px;
-}
-
-.popup-source-btn {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 12px 10px;
-    gap: 12px;
-    position: inherit;
-    width: 156px;
-    height: 48px;
-    left: 153px;
-    top: 4px;
-    background: #36B37F;
-    border-radius: 4px;
-    border: none;
-}
-.source-btn-text {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 141%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-    margin-top: 2px;
-}
-.overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 9;
-}
-.overlay.active {
-    opacity: 1;
-    pointer-events: all;
-} */
-
 body {
   margin: 0;
   padding: 0;
@@ -206,6 +8,17 @@ body {
   width: 100%;
   font-family: 'Inter', sans-serif;
 }
+
+/* Prevent background scrolling */
+
+/* body.modal-active {
+  overflow: hidden;
+} */
+
+/* .disable-scroll {
+  overflow: hidden;
+  height: 100%;
+} */
 
 /* Cards */
 
@@ -305,6 +118,8 @@ body {
   padding: 15px;
   height: 90vh;
   transition: 200ms ease-in-out;
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .close-container {
