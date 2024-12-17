@@ -13,14 +13,13 @@ function closeMenu() {
   hamburger.classList.remove('active');
   navMobile.classList.remove('active');
   body.classList.remove('disable-scroll');
+  document.getElementById('navMobile').style.display = 'none';
 }
 
 hamburger.addEventListener('click', toggleMenu);
 
-document.querySelectorAll('.nav-link').forEach((n) => {
-  n.addEventListener('click', () => {
-    closeMenu();
-  });
+document.querySelectorAll('.nav-link').forEach((link) => {
+  link.addEventListener('click', closeMenu);
 });
 
 const fullNameInput = document.getElementById('full-name');
