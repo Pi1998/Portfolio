@@ -50,74 +50,72 @@ form.addEventListener('input', saveFormData);
 
 // const btn = document.querySelectorAll('.seeproject');
 const data = [
-{
-  name: 'To Do List',
-  description: 'A simple and intuitive to-do list application to help users manage their daily tasks. Users can add, delete, and mark tasks as complete. It is built using JavaScript and styled with CSS to ensure responsiveness across devices.',
-  img: 'src/project-img/toDoList.png',
-  firstlineTitle: 'To Do List',
-  secondlineTitle: 'Task Management',
-  languages: ['JavaScript', 'HTML', 'CSS'],
-  technologies: ['JavaScript', 'HTML', 'CSS', 'GitHub', 'Bootstrap'],
-  linkLiveVersion: 'https://pi1998.github.io/to-do-list/dist/',
-  linkSource: 'https://github.com/Pi1998/to-do-list',
-}
-,
-{
-  name: 'AwesomeBooks',
-  description: 'AwesomeBooks is an app that allows users to add, remove, and store books in their personal collection. Built using ES6 JavaScript, the app provides a simple and elegant way to manage reading lists, store book details, and supports local storage for persistent data.',
-  img: 'src/project-img/awesomeBook.png', 
-  firstlineTitle: 'AwesomeBooks',
-  secondlineTitle: 'Manage Book Collection',
-  languages: ['JavaScript', 'HTML', 'CSS'],
-  technologies: ['JavaScript', 'HTML', 'CSS', 'GitHub', 'ES6', 'LocalStorage'],
-  linkLiveVersion: 'https://pi1998.github.io/AwesomeBooks-ES6/#books-container',
-  linkSource: 'https://github.com/Pi1998/AwesomeBooks-ES6',
-}
-,
-{
-  name: 'MarvelFolio',
-  description: 'MarvelFolio is an app that allows you to find comic books based on a Marvel character\'s name. Using an API, the app fetches information on the character and displays the list of related comic books.',
-  img: 'src/project-img/marvelFolio.png', 
-  firstlineTitle: 'MarvelFolio',
-  secondlineTitle: 'Marvel Comic Finder',
-  languages: ['React', 'Redux', 'HTML', 'CSS'],
-  technologies: ['Marvel API', 'React', 'Redux', 'Jest', 'CSS', 'HTML', 'API Integration'],
-  linkLiveVersion: 'https://bejewelled-kringle-516d5f.netlify.app/',
-  linkSource: 'https://github.com/Pi1998/marvelFolio',
-},
-{
-  name: 'StreamHub',
-  description: 'StreamHub is a web app that allows users to search for movies and TV shows by integrating an API for fetching movie data. It offers information about various media, including their ratings, release dates, and more.',
-  img: 'src/project-img/streamHub.png', 
-  firstlineTitle: 'StreamHub',
-  secondlineTitle: 'Find Movies Easily',
-  languages: ['JavaScript', 'HTML', 'CSS'],
-  technologies: ['OMDb API', 'JavaScript', 'CSS', 'HTML', 'API Integration'],
-  linkLiveVersion: 'https://goldinium.me/StreamHub/dist/index.html',
-  linkSource: 'https://github.com/Pi1998/StreamHub',
-},
-{
-  name: 'InterArtction',
-  description: 'The Interdisciplinary Exhibition, titled InterArtction, is an innovative and transformative event that brings together professionals, experts, and enthusiasts from various fields to explore the intersection of art and technology. This event will be held in different cities every two years, inviting organizations and individuals who are engaged in the world of open content, free software, open knowledge, and other related areas. We hope to foster collaboration on shared projects that advance the cause of the Commons, free culture, and open knowledge.',
-  img: 'src/project-img/interArtction.png',
-  firstlineTitle: 'InterArtction',
-  secondlineTitle: 'Exploring Art & Technology',
-  languages: ['HTML', 'CSS', 'JavaScript'],
-  technologies: ['Responsive Web Design', 'JavaScript', 'CSS', 'HTML'],
-  linkLiveVersion: 'https://pi1998.github.io/first-capstone/index.html',
-  linkSource: 'https://github.com/Pi1998/first-capstone',
-},
-{
-  name: 'Project-6',
-  description: 'Coming Soon.....',
-  img: 'src/popup-img/Snapshoot-Portfolio-desktop.png',
-  firstlineTitle: 'Coming Soon...',
-  secondlineTitle: '........',
-  languages: ['PHP', 'CSS', 'JavaScript', 'HTML'],
-  technologies: ['GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
-  linkLiveVersion: 'https://pi1998.github.io/Portfolio/',
-  linkSource: 'https://github.com/Pi1998/Portfolio',
-},
+  {
+    name: 'To Do List',
+    description: 'A simple and intuitive to-do list application to help users manage their daily tasks. Users can add, delete, and mark tasks as complete. It is built using JavaScript and styled with CSS to ensure responsiveness across devices.',
+    img: 'src/project-img/toDoList.png',
+    firstlineTitle: 'To Do List',
+    secondlineTitle: 'Task Management',
+    languages: ['JavaScript', 'HTML', 'CSS'],
+    technologies: ['JavaScript', 'HTML', 'CSS', 'GitHub', 'Bootstrap'],
+    linkLiveVersion: 'https://pi1998.github.io/to-do-list/dist/',
+    linkSource: 'https://github.com/Pi1998/to-do-list',
+  },
+  {
+    name: 'AwesomeBooks',
+    description: 'AwesomeBooks is an app that allows users to add, remove, and store books in their personal collection. Built using ES6 JavaScript, the app provides a simple and elegant way to manage reading lists, store book details, and supports local storage for persistent data.',
+    img: 'src/project-img/awesomeBook.png',
+    firstlineTitle: 'AwesomeBooks',
+    secondlineTitle: 'Manage Book Collection',
+    languages: ['JavaScript', 'HTML', 'CSS'],
+    technologies: ['JavaScript', 'HTML', 'CSS', 'GitHub', 'ES6', 'LocalStorage'],
+    linkLiveVersion: 'https://pi1998.github.io/AwesomeBooks-ES6/#books-container',
+    linkSource: 'https://github.com/Pi1998/AwesomeBooks-ES6',
+  },
+  {
+    name: 'MarvelFolio',
+    description: 'MarvelFolio is an app that allows you to find comic books based on a Marvel character\'s name. Using an API, the app fetches information on the character and displays the list of related comic books.',
+    img: 'src/project-img/marvelFolio.png',
+    firstlineTitle: 'MarvelFolio',
+    secondlineTitle: 'Marvel Comic Finder',
+    languages: ['React', 'Redux', 'HTML', 'CSS'],
+    technologies: ['Marvel API', 'React', 'Redux', 'Jest', 'CSS', 'HTML', 'API Integration'],
+    linkLiveVersion: 'https://bejewelled-kringle-516d5f.netlify.app/',
+    linkSource: 'https://github.com/Pi1998/marvelFolio',
+  },
+  {
+    name: 'StreamHub',
+    description: 'StreamHub is a web app that allows users to search for movies and TV shows by integrating an API for fetching movie data. It offers information about various media, including their ratings, release dates, and more.',
+    img: 'src/project-img/streamHub.png',
+    firstlineTitle: 'StreamHub',
+    secondlineTitle: 'Find Movies Easily',
+    languages: ['JavaScript', 'HTML', 'CSS'],
+    technologies: ['OMDb API', 'JavaScript', 'CSS', 'HTML', 'API Integration'],
+    linkLiveVersion: 'https://goldinium.me/StreamHub/dist/index.html',
+    linkSource: 'https://github.com/Pi1998/StreamHub',
+  },
+  {
+    name: 'InterArtction',
+    description: 'The Interdisciplinary Exhibition, titled InterArtction, is an innovative and transformative event that brings together professionals, experts, and enthusiasts from various fields to explore the intersection of art and technology. This event will be held in different cities every two years, inviting organizations and individuals who are engaged in the world of open content, free software, open knowledge, and other related areas. We hope to foster collaboration on shared projects that advance the cause of the Commons, free culture, and open knowledge.',
+    img: 'src/project-img/interArtction.png',
+    firstlineTitle: 'InterArtction',
+    secondlineTitle: 'Exploring Art & Technology',
+    languages: ['HTML', 'CSS', 'JavaScript'],
+    technologies: ['Responsive Web Design', 'JavaScript', 'CSS', 'HTML'],
+    linkLiveVersion: 'https://pi1998.github.io/first-capstone/index.html',
+    linkSource: 'https://github.com/Pi1998/first-capstone',
+  },
+  {
+    name: 'Project-6',
+    description: 'Coming Soon.....',
+    img: 'src/popup-img/Snapshoot-Portfolio-desktop.png',
+    firstlineTitle: 'Coming Soon...',
+    secondlineTitle: '........',
+    languages: ['PHP', 'CSS', 'JavaScript', 'HTML'],
+    technologies: ['GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
+    linkLiveVersion: 'https://pi1998.github.io/Portfolio/',
+    linkSource: 'https://github.com/Pi1998/Portfolio',
+  },
 ];
 const popUp = (i) => {
   const html = document.createElement('div');
@@ -159,7 +157,7 @@ const popUp = (i) => {
   `;
   body.appendChild(html);
 
-   // Disable scrolling
+  // Disable scrolling
   //  body.classList.add('disable-scroll');
 
   const closebtn = document.querySelector('.close-button');
