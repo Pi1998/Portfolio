@@ -13,7 +13,7 @@ function closeMenu() {
   hamburger.classList.remove('active');
   navMobile.classList.remove('active');
   body.classList.remove('disable-scroll');
-  document.getElementById("navMobile").style.display = "none";
+  document.getElementById('navMobile').style.display = 'none';
 }
 
 hamburger.addEventListener('click', toggleMenu);
